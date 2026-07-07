@@ -1,0 +1,139 @@
+{
+  "Tomato_Early_blight": {
+    "name": "Early Blight",
+    "description": "A fungal disease producing dark, concentric 'target-ring' spots on older, lower leaves first, which can spread upward.",
+    "symptoms": [
+      "Dark brown spots with concentric rings, resembling a target",
+      "Yellowing of leaf tissue surrounding the spots",
+      "Symptoms typically begin on older, lower leaves first"
+    ],
+    "causes": [
+      "Alternaria solani fungus, thriving in warm, humid conditions",
+      "Overhead irrigation and prolonged leaf wetness",
+      "Stressed or nutrient-deficient plants"
+    ],
+    "treatment": [
+      "Remove infected lower leaves promptly",
+      "Apply a fungicide labeled for early blight (e.g. chlorothalonil, copper)",
+      "Mulch around the base to prevent soil splash onto leaves"
+    ],
+    "prevention": [
+      "Rotate crops annually",
+      "Stake or cage plants for better air circulation",
+      "Water at the base, early in the day, to let foliage dry quickly"
+    ]
+  },
+  "Tomato_Healthy": {
+    "name": "Healthy",
+    "description": "This leaf shows no visible signs of disease or pest damage — the plant appears to be in good health.",
+    "symptoms": [
+      "Uniform green coloring with no spots, curling, or wilting",
+      "No visible mold, webbing, or lesions"
+    ],
+    "causes": [],
+    "treatment": [
+      "No treatment needed — continue standard care and monitoring"
+    ],
+    "prevention": [
+      "Keep up consistent watering, good airflow, and regular inspection",
+      "Rotate crops each season as general good practice",
+      "Monitor periodically so early symptoms are caught quickly"
+    ]
+  },
+  "Tomato_leaf_late_blight": {
+    "name": "Late Blight",
+    "description": "An aggressive, fast-spreading disease causing large, irregular greasy-looking patches that turn brown and can destroy a crop within days.",
+    "symptoms": [
+      "Large, irregular, water-soaked patches that quickly turn brown",
+      "White fuzzy mold on the underside of leaves in humid conditions",
+      "Rapid wilting and collapse of whole leaves or stems"
+    ],
+    "causes": [
+      "Phytophthora infestans (the same pathogen behind the Irish potato famine)",
+      "Cool, wet, humid weather",
+      "Wind-blown spores from infected plants nearby"
+    ],
+    "treatment": [
+      "Remove and destroy infected plants immediately — do not compost them",
+      "Apply a fungicide preventatively at the first regional report of late blight",
+      "Improve drainage and airflow around remaining plants"
+    ],
+    "prevention": [
+      "Plant resistant tomato varieties where available",
+      "Avoid overhead watering, especially in the evening",
+      "Monitor local blight forecasts during humid seasons"
+    ]
+  },
+  "Tomato_leaf_yellow_curl_virus": {
+    "name": "Yellow Leaf Curl Virus",
+    "description": "A viral disease causing upward curling, yellowing, and stunted growth of leaves, severely reducing fruit yield.",
+    "symptoms": [
+      "Upward curling and yellowing of leaf edges",
+      "Stunted, bushy plant growth with smaller leaves",
+      "Significant reduction in flowering and fruit set"
+    ],
+    "causes": [
+      "Transmitted exclusively by the silverleaf whitefly",
+      "Nearby infected plants acting as a virus reservoir",
+      "Warm climates where whiteflies thrive year-round"
+    ],
+    "treatment": [
+      "There is no cure once a plant is infected — remove and destroy infected plants",
+      "Control whitefly populations with insecticidal soap or approved insecticides",
+      "Use yellow sticky traps to monitor and reduce whitefly numbers"
+    ],
+    "prevention": [
+      "Plant virus-resistant tomato varieties",
+      "Use reflective mulches or fine mesh row covers to deter whiteflies",
+      "Remove weeds nearby that can host whiteflies"
+    ]
+  },
+  "Tomato_mold_leaf": {
+    "name": "Leaf Mold",
+    "description": "A fungal disease showing pale green or yellow spots on the upper leaf surface with olive-green to grayish mold on the underside.",
+    "symptoms": [
+      "Pale green or yellow spots on the upper leaf surface",
+      "Olive-green to grayish fuzzy mold on the underside of leaves",
+      "Leaves may curl, wither, and drop in advanced cases"
+    ],
+    "causes": [
+      "Passalora fulva fungus, favored by high humidity (above 85%)",
+      "Poor ventilation, common in greenhouses and dense plantings",
+      "Extended periods of leaf wetness"
+    ],
+    "treatment": [
+      "Increase ventilation and reduce humidity around plants",
+      "Remove and destroy affected leaves",
+      "Apply a fungicide if the infection is spreading"
+    ],
+    "prevention": [
+      "Space plants generously and prune for airflow",
+      "Water at the soil line, not on foliage",
+      "Choose resistant varieties for greenhouse growing"
+    ]
+  },
+  "Tomato_septora_leaf_spot": {
+    "name": "Septoria Leaf Spot",
+    "description": "A fungal disease producing many small, circular spots with dark borders and light gray centers, usually starting on lower leaves.",
+    "symptoms": [
+      "Numerous small, circular spots with dark margins and gray centers",
+      "Tiny black specks (fungal fruiting bodies) visible within spots",
+      "Heavily spotted leaves turn yellow, then brown, and drop early"
+    ],
+    "causes": [
+      "Septoria lycopersici fungus, spread by rain splash and wet tools",
+      "Warm, wet, humid weather",
+      "Leftover infected plant debris in soil"
+    ],
+    "treatment": [
+      "Remove infected leaves as soon as spots appear",
+      "Apply a fungicide labeled for Septoria leaf spot",
+      "Clear fallen leaves and debris around the plant"
+    ],
+    "prevention": [
+      "Rotate crops for at least one year",
+      "Mulch to prevent soil splashing onto lower leaves",
+      "Avoid overhead watering"
+    ]
+  }
+}

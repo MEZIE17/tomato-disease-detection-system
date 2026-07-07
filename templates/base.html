@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Leaf & Ledger — Tomato Disease Diagnosis{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <a href="{{ url_for('index') }}" class="brand">
+      <span class="brand-mark">&#127813;</span>
+      <span class="brand-text">Tomatoes Crop Disease Detection<span class="brand-amp"></span></span>
+    </a>
+    <nav class="site-nav">
+      <a href="{{ url_for('index') }}">Diagnose</a>
+      <a href="{{ url_for('about') }}">About</a>
+    </nav>
+  </header>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="flash-stack">
+        {% for message in messages %}
+          <div class="flash-note">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <span>Leaf diagnostic tool for tomato growers</span>
+    <span class="footer-divider">&middot;</span>
+    <span>Built with MobileNetV2</span>
+  </footer>
+</body>
+</html>

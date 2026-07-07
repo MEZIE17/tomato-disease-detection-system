@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="about">
+  <span class="eyebrow">About This Tool</span>
+  <h1>Diagnosis, without the wait.</h1>
+  <p class="about-lead">
+    Tomato crops are vulnerable to a wide range of diseases and pests, and by
+    the time symptoms are obvious to the eye, damage may already be spreading.
+    Leaf &amp; Ledger uses a transfer-learned MobileNetV2 model to recognize
+    six common leaf conditions from a single photo, giving growers a fast
+    first read before deciding on treatment.
+  </p>
+
+  <div class="about-grid">
+    <div class="about-block">
+      <h2>How it works</h2>
+      <p>A photo is resized and normalized, then passed through a MobileNetV2 network pre-trained on millions of general images and fine-tuned specifically on labeled tomato leaf photos. The model outputs a probability for each of ten possible conditions.</p>
+    </div>
+    <div class="about-block">
+      <h2>What it isn't</h2>
+      <p>This tool offers a preliminary read, not a lab diagnosis. Confidence scores below roughly 70% or unusual lighting/backgrounds can affect accuracy. For high-stakes decisions, confirm with a local agricultural extension office.</p>
+    </div>
+    <div class="about-block">
+      <h2>The model</h2>
+      <p>Trained on a labeled tomato leaf photo dataset, split into training and validation sets across six classes: five disease/pest categories plus healthy leaves.</p>
+    </div>
+  </div>
+
+  {% if not model_ready %}
+    <div class="model-notice">
+      <strong>Model not connected yet.</strong>
+      Once <code>tomato_model.keras</code> and <code>class_names.json</code> are added to the
+      <code>models/</code> folder, diagnosis will activate automatically.
+    </div>
+  {% endif %}
+</section>
+
+{% endblock %}

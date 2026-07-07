@@ -1,0 +1,10 @@
+Flask
+tensorflow
+numpy
+Pillow
+Werkzeug
+gunicorn
+
+# Only needed for training/evaluate_model.py (not required to run the web app)
+matplotlib
+scikit-learn

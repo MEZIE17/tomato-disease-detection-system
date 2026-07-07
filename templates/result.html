@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="report">
+  <div class="report-card {% if is_healthy %}is-healthy{% endif %}">
+    <div class="report-image">
+      <img src="{{ image_url }}" alt="Uploaded tomato leaf">
+    </div>
+
+    <div class="report-body">
+      <div class="report-meta">
+        <span class="report-id">FIELD REPORT</span>
+        <span class="report-date">{{ timestamp }}</span>
+      </div>
+
+      <h1 class="report-diagnosis">{{ disease_name }}</h1>
+
+      <div class="confidence-row">
+        <div class="confidence-track">
+          <div class="confidence-fill" style="width: {{ confidence }}%"></div>
+        </div>
+        <span class="confidence-value">{{ confidence }}% confidence</span>
+      </div>
+
+      <p class="report-description">{{ description }}</p>
+
+      {% if symptoms %}
+      <div class="report-section">
+        <h2>Symptoms</h2>
+        <ul>
+          {% for s in symptoms %}<li>{{ s }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if causes %}
+      <div class="report-section">
+        <h2>Likely Causes</h2>
+        <ul>
+          {% for c in causes %}<li>{{ c }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if treatment %}
+      <div class="report-section">
+        <h2>Recommended Treatment</h2>
+        <ul>
+          {% for t in treatment %}<li>{{ t }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if prevention %}
+      <div class="report-section">
+        <h2>Prevention</h2>
+        <ul>
+          {% for p in prevention %}<li>{{ p }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if top3|length > 1 %}
+      <div class="report-section alt-readings">
+        <h2>Other Possibilities</h2>
+        <ul class="alt-list">
+          {% for alt in top3[1:] %}
+            <li><span>{{ alt.name }}</span><span class="mono">{{ alt.confidence }}%</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <a href="{{ url_for('index') }}" class="new-diagnosis-link">&larr; Diagnose another leaf</a>
+</section>
+
+{% endblock %}
